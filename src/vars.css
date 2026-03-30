@@ -1,0 +1,17 @@
+:root {
+    --bg-body: #FFFFFF;
+
+    --header-color: #0C0C0E;
+    --header-link-bg: #0C0C0E0D;
+
+    --copyright-color: #0C0C0E;
+}
+
+[data-theme="dark"] {
+    --bg-body: #0C0C0E;
+
+    --header-color: #FFFFFF;
+    --header-link-bg: #FFFFFF0D;
+
+    --copyright-color: #FFFFFF;
+}

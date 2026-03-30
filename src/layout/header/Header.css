@@ -1,0 +1,78 @@
+.header {
+    padding: 30px 0;
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--header-color);
+}
+
+.header__other {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__link {
+    padding: 10px 15px;
+
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: transparent;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--header-color);
+
+    &.active {
+        background-color: var(--header-link-bg);
+    }
+
+    &.active:hover {
+        opacity: 0.8;
+    }
+
+    &:not(.active):hover {
+        border: 1px solid var(--header-link-bg);
+    }
+}
+
+.header__theme,
+.header__github {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--header-link-bg);
+    border-radius: 8px;
+    background-color: transparent;
+
+    color: var(--header-color);
+
+    &:hover {
+        border: 1px solid transparent;
+        background-color: var(--header-link-bg);
+
+        cursor: pointer;
+    }
+}

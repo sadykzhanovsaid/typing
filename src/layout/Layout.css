@@ -1,0 +1,26 @@
+.copyright {
+    padding: 30px 0;
+    margin-top: auto;
+}
+
+.copyright__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright__title {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    color: var(--copyright-color);
+
+    & > img {
+        height: 15px;
+    }
+}
