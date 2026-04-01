@@ -5,6 +5,9 @@
     --header-link-bg: #0C0C0E0D;
 
     --copyright-color: #0C0C0E;
+
+    --speed-color: #0C0C0E;
+    --speed-restart-bg: #0C0C0E0D;
 }
 
 [data-theme="dark"] {
@@ -14,4 +17,7 @@
     --header-link-bg: #FFFFFF0D;
 
     --copyright-color: #FFFFFF;
+
+    --speed-color: #FFFFFF;
+    --speed-restart-bg: #FFFFFF0D;
 }
