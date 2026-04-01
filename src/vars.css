@@ -8,6 +8,14 @@
 
     --speed-color: #0C0C0E;
     --speed-restart-bg: #0C0C0E0D;
+
+    --mac-bg: #F5F5F5;
+    --mac-key-border: #E5E5E5;
+    --mac-key-bg: #FFFFFF;
+    --mac-color: #0C0C0E;
+    --mac-line-bg: #E5E5E5;
+    --mac-key-bg-hover: #E5E5E5;
+    --mac-key-border-hover: #E5E5E5;
 }
 
 [data-theme="dark"] {
@@ -20,4 +28,12 @@
 
     --speed-color: #FFFFFF;
     --speed-restart-bg: #FFFFFF0D;
+
+    --mac-bg: #242426;
+    --mac-key-border: transparent;
+    --mac-key-bg: #0C0C0E;
+    --mac-color: #FFFFFF;
+    --mac-line-bg: transparent;
+    --mac-key-bg-hover: #3D3D3D;
+    --mac-key-border-hover: transparent;
 }

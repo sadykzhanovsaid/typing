@@ -37,7 +37,6 @@ function Speed() {
                     <div className="typing__box">
                         <div
                             ref={containerRef}
-                            style={{position: "relative"}}
                         >
                             {!typing.finished && (
                                 <div
