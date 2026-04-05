@@ -1,5 +1,6 @@
 import {useEffect, useState, useRef} from "react"
 import {generateWorlds} from "@/utils/generateWorlds.jsx"
+import {useLocation} from "react-router-dom";
 
 export function useTyping() {
     const [text, setText] = useState(generateWorlds())
@@ -15,6 +16,7 @@ export function useTyping() {
     const startedRef = useRef(started)
     const finishedRef = useRef(finished)
     const textRef = useRef(text)
+    const location = useLocation()
 
     useEffect(() => {
         startedRef.current = started
@@ -24,6 +26,8 @@ export function useTyping() {
 
     useEffect(() => {
         function handleKeyDown(e) {
+            if (location.pathname !== "/") return
+
             const key = e.key
 
             if (finishedRef.current) return
@@ -81,7 +85,7 @@ export function useTyping() {
 
         window.addEventListener("keydown", handleKeyDown)
         return () => window.removeEventListener("keydown", handleKeyDown)
-    }, [])
+    }, [location.pathname])
 
     useEffect(() => {
         return () => {
